@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JurosCalculado", "JurosCalculado.csproj", "{370A293C-29DD-481E-888B-65091C97938F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JurosCalculadoTests", "..\JurosCalculadoTests\JurosCalculadoTests.csproj", "{A462F2B9-AE6B-48ED-96FC-4A67511CD9C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{370A293C-29DD-481E-888B-65091C97938F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{370A293C-29DD-481E-888B-65091C97938F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{370A293C-29DD-481E-888B-65091C97938F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{370A293C-29DD-481E-888B-65091C97938F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A462F2B9-AE6B-48ED-96FC-4A67511CD9C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A462F2B9-AE6B-48ED-96FC-4A67511CD9C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A462F2B9-AE6B-48ED-96FC-4A67511CD9C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A462F2B9-AE6B-48ED-96FC-4A67511CD9C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7F72860-A347-4582-A9BA-CCB667849F3F}
+	EndGlobalSection
+EndGlobal
