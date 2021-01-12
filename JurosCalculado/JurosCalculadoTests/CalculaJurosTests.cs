@@ -40,5 +40,14 @@ namespace JurosCalculado.Tests
 
             Assert.IsTrue(result != 0);
         }
+
+        [TestMethod()]
+        public void BuscaURLTest()
+        {
+            CalculaJuros controller = new CalculaJuros();
+
+            var result = controller.BuscaURL();
+            Assert.IsNotNull(result);
+        }
     }
 }

@@ -50,23 +50,40 @@ namespace JurosCalculado
             {
                 throw new Exception("Falha ao buscar juros: " + e.Message);
             }
-            return Convert.ToDouble(juros.Replace(",","."));
+            return Convert.ToDouble(juros.Replace(",", "."));
 
         }
 
         public string BuscaURL()
         {
-            TextReader tr = new StreamReader("EnderecoURL.txt");
-            string endereco = tr.ReadLine();
-            tr.Close();
+            try
+            {
 
-            return endereco;
+                TextReader tr = new StreamReader("EnderecoURL.txt");
+                string endereco = tr.ReadLine();
+                tr.Close();
+
+                return endereco;
+            }
+            catch
+            {
+                TextWriter tw = new StreamWriter("EnderecoURL.txt");
+                string enderecoFixo = "192.168.1.4:62489";
+                tw.WriteLine(enderecoFixo);
+                tw.Close();
+                return enderecoFixo;
+            }
+
         }
 
-        public string Calcula(double valorInicial, int meses,double juros)
+        public string Calcula(double valorInicial, int meses, double juros)
         {
             var resultado = valorInicial * Math.Pow(1 + juros, meses);
-            return resultado.ToString("0.00"); 
+            return resultado.ToString("0.00");
         }
     }
 }
+
+
+
+          
